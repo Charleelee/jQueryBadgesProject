@@ -6,7 +6,7 @@ $(function() {
     success: function(response) {
       // handle response
       var data = response.courses.completed;
-      for(var i = 0;i <= data.length;i++){
+      for(var i = 0;i < data.length;i++){
         var div = document.createElement("div");
         div.className = "course";
         var badgeTitle = document.createElement("h3");
